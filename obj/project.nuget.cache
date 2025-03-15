@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ahKhl3fELNU=",
+  "dgSpecHash": "ig+UbVds42s=",
   "success": true,
   "projectFilePath": "C:\\Users\\A7riel\\Downloads\\AgData Developer Test\\AgData Developer Test\\AgData\\AgData.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A7riel\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\A7riel\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\A7riel\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\A7riel\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",

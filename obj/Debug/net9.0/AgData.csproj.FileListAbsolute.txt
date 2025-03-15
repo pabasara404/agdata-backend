@@ -64,3 +64,5 @@ C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\AgData.pdb
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\AgData.genruntimeconfig.cache
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\ref\AgData.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\AgData.sourcelink.json
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\CsvHelper.dll

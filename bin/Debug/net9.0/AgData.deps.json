@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "AgData/1.0.0": {
         "dependencies": {
+          "CsvHelper": "33.0.1",
           "Dapper": "2.1.66",
           "FluentValidation": "11.11.0",
           "FluentValidation.AspNetCore": "11.3.0",
@@ -17,6 +18,14 @@
         },
         "runtime": {
           "AgData.dll": {}
+        }
+      },
+      "CsvHelper/33.0.1": {
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.0.1.24"
+          }
         }
       },
       "Dapper/2.1.66": {
@@ -385,6 +394,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CsvHelper/33.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "path": "csvhelper/33.0.1",
+      "hashPath": "csvhelper.33.0.1.nupkg.sha512"
     },
     "Dapper/2.1.66": {
       "type": "package",

@@ -55,7 +55,6 @@ namespace AgData.Controllers
             }
         }
 
-
         [HttpPost]
         public async Task<ActionResult<UserDto>> Create(CreateUserDto createUserDto)
         {
@@ -94,6 +93,44 @@ namespace AgData.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error updating user {UserId}", id);
+                return StatusCode(500, "An error occurred while processing your request");
+            }
+        }
+
+        [HttpPost("set-password")]
+        public async Task<ActionResult> SetPassword(SetPasswordDto setPasswordDto)
+        {
+            try
+            {
+                var result = await _userService.SetPasswordAsync(setPasswordDto);
+                if (result)
+                {
+                    return Ok(new { message = "Password has been set successfully" });
+                }
+                return BadRequest(new { message = "Invalid or expired token" });
+            }
+            catch (FluentValidation.ValidationException ex)
+            {
+                return BadRequest(ex.Errors);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error setting password");
+                return StatusCode(500, "An error occurred while processing your request");
+            }
+        }
+
+        [HttpGet("export-csv")]
+        public async Task<ActionResult> ExportToCsv()
+        {
+            try
+            {
+                var csvData = await _userService.ExportUsersToCsvAsync();
+                return File(csvData, "text/csv", "users.csv");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error exporting users to CSV");
                 return StatusCode(500, "An error occurred while processing your request");
             }
         }

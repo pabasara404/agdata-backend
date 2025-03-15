@@ -10,5 +10,7 @@ namespace AgData.Services
         Task<IEnumerable<UserDto>> GetAllAsync();
         Task<UserDto> CreateAsync(CreateUserDto userDto);
         Task<UserDto?> UpdateAsync(int id, UpdateUserDto userDto);
+        Task<bool> SetPasswordAsync(SetPasswordDto setPasswordDto);
+        Task<byte[]> ExportUsersToCsvAsync();
     }
 }
