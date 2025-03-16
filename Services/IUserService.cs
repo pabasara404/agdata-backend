@@ -12,5 +12,6 @@ namespace AgData.Services
         Task<UserDto?> UpdateAsync(int id, UpdateUserDto userDto);
         Task<bool> SetPasswordAsync(SetPasswordDto setPasswordDto);
         Task<byte[]> ExportUsersToCsvAsync();
+        Task<UserDto?> AuthenticateAsync(string username, string password);
     }
 }

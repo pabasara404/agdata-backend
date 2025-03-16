@@ -252,6 +252,40 @@ namespace AgData.Services
             return memoryStream.ToArray();
         }
 
+        public async Task<UserDto?> AuthenticateAsync(string username, string password)
+        {
+            _logger?.LogInformation("Authenticating user: {Username}", username);
+
+            // Get user by username
+            var user = await _userRepository.GetByEmailAsync(username) ??
+                      (await _userRepository.GetAllAsync())
+                      .FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+
+            if (user == null)
+            {
+                _logger?.LogWarning("Authentication failed: User {Username} not found", username);
+                return null;
+            }
+
+            // Check if password is set
+            if (string.IsNullOrEmpty(user.PasswordHash))
+            {
+                _logger?.LogWarning("Authentication failed: User {Username} has no password set", username);
+                return null;
+            }
+
+            // Verify password
+            var hashedPassword = HashPassword(password);
+            if (user.PasswordHash != hashedPassword)
+            {
+                _logger?.LogWarning("Authentication failed: Invalid password for user {Username}", username);
+                return null;
+            }
+
+            _logger?.LogInformation("Authentication successful for user {Username}", username);
+            return MapToDto(user);
+        }
+
         private UserDto MapToDto(User user)
         {
             var dto = new UserDto

@@ -13,9 +13,9 @@ namespace AgData.Data.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly IDbConnectionFactory _connectionFactory;
-        private readonly ILogger<UserRepository>? _logger;
+        private readonly ILogger<UserRepository> _logger;
 
-        public UserRepository(IDbConnectionFactory connectionFactory, ILogger<UserRepository>? logger = null)
+        public UserRepository(IDbConnectionFactory connectionFactory, ILogger<UserRepository> logger)
         {
             _connectionFactory = connectionFactory;
             _logger = logger;

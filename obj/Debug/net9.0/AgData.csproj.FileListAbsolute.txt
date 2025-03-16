@@ -66,3 +66,11 @@ C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\ref\AgData.dll
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\obj\Debug\net9.0\AgData.sourcelink.json
 C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\CsvHelper.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\A7riel\Downloads\AgData Developer Test\AgData Developer Test\AgData\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
